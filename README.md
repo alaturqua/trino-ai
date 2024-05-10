@@ -39,7 +39,7 @@ To set up your development environment, execute the following commands:
 git clone https://github.com/alaturqua/trino-ai.git
 
 # Navigate into the project directory
-cd <directory_name>
+cd trino-ai
 
 # Build the project
 ./mvnw clean install
