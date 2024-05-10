@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  trino:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trino
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env.local
+    extra_hosts:
+      - "kubernetes.docker.internal:host-gateway"
