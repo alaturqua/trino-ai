@@ -73,14 +73,6 @@ API_ENDPOINT=<your_api_endpoint>
 ```
 Replace `<your_model>`, `<your_api_key>`, and `<your_api_endpoint>` with your actual values.
 
-### Running the Project
-
-Run the project using Docker Compose with the following command:
-
-```bash
-docker-compose up -d
-```
-
 ### Local LLM Server - Ollama
 
 For local deployments, you may use the Ollama Server. Refer to the [Ollama Repository](https://github.com/ollama/ollama) for setup instructions.
@@ -106,4 +98,12 @@ ollama pull mistral
 #### phi3
 ```bash
 ollama pull phi3
+```
+
+### Running the Project
+
+Run the project using Docker Compose with the following command:
+
+```bash
+docker-compose up -d
 ```
