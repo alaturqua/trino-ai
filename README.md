@@ -48,7 +48,7 @@ cd trino-ai
 ### Installing
 After building copy the `target/trino-ai-<version>` folder to the plugin directory of Trino.
 
-
+# Quickstart
 ## Docker Deployment
 
 Deploy the project using Docker and Docker Compose, as defined in the `docker-compose.yml` file in the root directory.
@@ -73,7 +73,26 @@ API_ENDPOINT=<your_api_endpoint>
 ```
 Replace `<your_model>`, `<your_api_key>`, and `<your_api_endpoint>` with your actual values.
 
-### Local LLM Server - Ollama
+### Running the Project
+
+Run the project using Docker Compose with the following command:
+
+```bash
+docker-compose up -d
+```
+To rebuild and run
+
+```bash
+docker-compose up -d --build
+```
+
+### Clean Up
+Stop running.
+```bash
+docker-compose down
+```
+
+### Local LLM Server - Ollama - (Optional)
 
 For local deployments, you may use the Ollama Server. Refer to the [Ollama Repository](https://github.com/ollama/ollama) for setup instructions.
 
@@ -82,8 +101,6 @@ For local deployments, you may use the Ollama Server. Refer to the [Ollama Repos
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ```
-
-### Quickstart
 
 #### llama3
 ```bash
@@ -100,10 +117,4 @@ ollama pull mistral
 ollama pull phi3
 ```
 
-### Running the Project
 
-Run the project using Docker Compose with the following command:
-
-```bash
-docker-compose up -d
-```
