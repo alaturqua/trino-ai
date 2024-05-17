@@ -25,9 +25,9 @@ Follow these instructions to set up the project locally for development and test
 - Trino 447
 - Java 22
 - Maven
-- API Key
-- API Model
-- API Endpoint
+- API Key for LLM
+- API Model Name
+- API Endpoint using OpenAI API Spec
 - Optional: Ollama Server
 
 ### Building
