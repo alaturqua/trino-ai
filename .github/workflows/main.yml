@@ -19,6 +19,8 @@ jobs:
         run: |
           echo "::add-matcher::.github/problem-matcher.json"
           echo "::remove-matcher owner=java::"
+      - name: Grant execute permission for mvnw
+        run: chmod +x ./mvnw
       - name: Maven Checks
         run: |
           ./mvnw -B clean install
